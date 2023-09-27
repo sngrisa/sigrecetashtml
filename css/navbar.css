@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+}
+
+.navbar {
+    padding: .5rem 7rem !important;
+    min-height: 80px !important;
+    font-size: 20px;
+    color: black !important;
+    background-color: lightgray !important;
+    font-weight: bolder !important;
+    border-bottom: 1px solid black;
+}
+
+.navbar>* {
+    color: black !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: black !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap !important;
+        justify-content: space-between !important;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0 !important;
+    }
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.nav-items li{
+    text-align: justify;
+    justify-content: space-between;
+}
+
+
+a{
+    color: black !important;
+}

@@ -1,0 +1,39 @@
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footer-social-list li {
+    margin: 0.5rem;
+    font-size: 1.8rem;
+}
+
+
+.footer-items {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-copyrigth li {
+    margin: auto;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
