@@ -1,8 +1,8 @@
 #hero {
     margin-top: 30px;
     text-align: center;
-    height: 700px;
     display: flex;
+    height: 500px;
     justify-content: center;
     background-image: url('./../assets/wallpaper.jpg');
     background-size: cover;
@@ -10,6 +10,10 @@
     border-radius: 4%;
     color: darkblue;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+a {
+    text-decoration: none;
 }
 
 #hero h1 {
@@ -157,18 +161,179 @@
 }
 
 li {
-    list-style: none;
     font-weight: bolder;
 }
 
-ul,
-ol {
+ul {
     list-style: none;
     padding-left: 0;
 }
 
-span{
+span {
     display: flex;
     justify-content: center;
 }
 
+.center {
+    margin: auto !important;
+    width: 75% !important;
+    padding: 10px !important;
+}
+
+
+@media (min-width: 700px) {
+
+    a{
+        text-decoration: none !important;
+    }
+
+    .card-img,
+    .card-img-top {
+        height: 200px !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .card-img,
+    .card-img-top {
+        border-top-left-radius: var(--bs-card-inner-border-radius) 1 !important;
+        border-top-right-radius: var(--bs-card-inner-border-radius) !important;
+        height: 200px !important;
+    }
+
+    #lettuce {
+        position: absolute;
+        top: 236px;
+        left: 265px;
+        width: 67px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    span {
+        display: flex !important;
+        justify-content: center !important;
+        margin-left: 20% !important;
+    }
+
+    h2 {
+        display: flex !important;
+        justify-content: center !important;
+        margin-left: 20% !important;
+    }
+
+    .card-img,
+    .card-img-top {
+        height: 400px !important;
+    }
+
+    #hero {
+        height: 500px !important;
+        display: flex;
+    }
+
+    .input-wrapper {
+        z-index: 1;
+        background: white;
+        max-width: 440px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .card-img,
+    .card-img-top {
+        border-top-left-radius: var(--bs-card-inner-border-radius) 1 !important;
+        border-top-right-radius: var(--bs-card-inner-border-radius) !important;
+        height: 200px !important;
+    }
+
+    span {
+        display: flex !important;
+        justify-content: center !important;
+        margin-left: 20% !important;
+    }
+
+    h2 {
+        display: flex !important;
+        justify-content: center !important;
+        margin-left: 20% !important;
+    }
+
+    #lettuce {
+        position: absolute;
+        top: 236px;
+        left: 265px;
+        width: 67px;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .card-img,
+    .card-img-top {
+        height: 400px !important;
+    }
+
+    #hero {
+        height: 450px !important;
+    }
+
+    #beef {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        animation: float 7s ease-in-out infinite;
+    }
+
+    #chef {
+        width: 335px;
+        height: auto;
+    }
+
+    #onion {
+        position: absolute;
+        top: 43px;
+        left: 270px;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .card-chef {
+        margin-top: 10% !important;
+        display: flex;
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline !important;
+        padding-left: inherit !important;
+        margin-left: 15% !important;
+    }
+
+    .input-wrapper {
+        z-index: 1;
+        background: white;
+        max-width: 440px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}

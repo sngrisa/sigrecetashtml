@@ -1,0 +1,88 @@
+@media (max-width: 600px){
+    img {
+        border-radius: 4% !important;
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+
+    img,svg{
+        height: 500px !important;
+    }
+}
+
+@media (min-height: 600px){
+    img {
+        border-radius: 4% !important;
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+    img, svg{
+        height: 300px !important;
+    }
+}
+
+@media (min-height: 100px){
+    img {
+        border-radius: 4% !important;
+        width: 100% !important;
+        height: 500px !important;
+        margin-bottom: 5%;
+    }
+    img,svg{
+        height: 500px !important;
+    }
+}
+
+img,svg{
+    height: 300px !important;
+}
+
+.alert-info {
+    border-radius: 3% !important;
+    color: black !important;
+}
+
+.ingredients {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    text-align: center !important;
+    border-radius: 7% !important;
+}
+
+.ingrecard{
+    border-radius: 10% !important;
+}
+
+
+.card {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px !important;
+}
+
+.card-steps {
+    overflow: clip !important;
+    position: relative !important;
+    background: #E7F9FD !important;
+    border-radius: 20px !important;
+    border: 0 !important;
+    min-height: 400px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px !important;
+}
+
+h1,
+h3 {
+    font-weight: bolder !important; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+p{
+    font-weight: bold;
+}

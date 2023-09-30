@@ -14,11 +14,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body class="h-100">
-  <div class="d-flex flex-column h-100 ">
+<body>
+  <div class="d-flex flex-column h-100 text-center">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><i class="bi bi-card-list"></i> SiG Recetas</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,7 +42,7 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="container main-container">
       <section id="hero">
         <h1>Buena Comida, <br> Buena Vida</h1>
       </section>
@@ -53,7 +52,7 @@
           <span class="text-recipe">Aquí algunos platos que me encanta preparar en casa, te animas?</span>
         </div>
         <div class="row" id="recetas">
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
+          <div class="col-6 col-md-4 mt-5">
             <div class="d-flex justify-content-center">
               <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
                 <img class="card-img-top" src="./assets/bizchocolate.jpg" alt="bizchocolate.jpg">
@@ -62,45 +61,47 @@
                   <p class="card-text">El pastel de chocolate, tarta de chocolate o torta de chocolate, es un postre
                     conocido internacionalmente, que se popularizó a finales del siglo XIX y se sirve frecuentemente en
                     reuniones, como fiestas de cumpleaños y bodas.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
+                  <a href="./pages/bizchocolate.html" class="btn btn-dark btn-block mt-2">
                     <i class="bi bi-eyeglasses"></i> Ver Receta
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
-                <img class="card-img-top" src="./assets/biznaranja.jpg" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Bizcocho de Naranja</h5>
-                  <p class="card-text"> Es uno de esos bizcochos de toda la vida con una miga densa y jugosa.
-                    Aromatizado con la ralladura y el zumo de naranja, para conseguir un toque muy cítrico, resulta
-                    delicioso.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
+          <div class="col-6 col-md-4 mt-5">
+            <a href="./pages/biznaranja.html">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./assets/biznaranja.jpg" alt="bizchocolate.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">Bizcocho de Naranja</h5>
+                    <p class="card-text"> Es uno de esos bizcochos de toda la vida con una miga densa y jugosa.
+                      Aromatizado con la ralladura y el zumo de naranja, para conseguir un toque muy cítrico, resulta
+                      delicioso.</p>
+                    <a href="./pages/biznaranja.html" class="btn btn-dark btn-block mt-2">
+                      <i class="bi bi-eyeglasses"></i> Ver Receta
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
+          <div class="col-6 col-md-4 mt-5">
             <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
+              <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="./assets/pastafrola.png" alt="bizchocolate.jpg">
                 <div class="card-body">
                   <h5 class="card-title">Pastafrola</h5>
                   <p class="card-text">Tarta artesanal típica de la gastronomía de Italia, Egipto, Grecia, Paraguay,
                     Argentina y Uruguay.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
+                  <a href="./pages/pastafrola.html" class="btn btn-dark btn-block mt-2">
                     <i class="bi bi-eyeglasses"></i> Ver Receta
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
+          <div class="col-6 col-md-4 mt-5">
             <div class="d-flex justify-content-center">
               <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
                 <img class="card-img-top" src="./assets/lemonpae.jpg" alt="bizchocolate.jpg">
@@ -109,45 +110,50 @@
                   <p class="card-text">Tarta formada por una base de masa quebrada u hojaldre que se rellena con crema
                     de limón. Esta tarta a menudo se complementa con un merengue, lo que resulta en tarta de limón con
                     merengue.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
+                  <a href="./pages/lemonpae.html" class="btn btn-dark btn-block mt-2">
                     <i class="bi bi-eyeglasses"></i> Ver Receta
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
-                <img class="card-img-top" src="./assets/flan.jpg" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Flan</h5>
-                  <p class="card-text">Postre de origen francés​ elaborado con una natilla teniendo como ingredientes
-                    principales huevos enteros, leche y azúcar que luego es refrigerado para obtener una textura cremosa
-                    y gelatinosa.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
+          <div class="col-6 col-md-4 mt-5">
+            <a href="./pages/flan.html">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./assets/flan.jpg" alt="flan.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">Flan</h5>
+                    <p class="card-text">Postre de origen francés​ elaborado con una natilla teniendo como ingredientes
+                      principales huevos enteros, leche y azúcar que luego es refrigerado para obtener una textura
+                      cremosa
+                      y gelatinosa.</p>
+                    <a href="./pages/flan.html" class="btn btn-dark btn-block mt-2">
+                      <i class="bi bi-eyeglasses"></i> Ver Receta
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col col-md-4 mt-5" *ngFor="let recetaMenu of recetasMenu; let i = index">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
-                <img class="card-img-top" src="./assets/oreotorta.jpg" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Torta Helada</h5>
-                  <p class="card-text">Torta como una tarta hecha con helado y pastel, en capas alternas o mezclados,
-                    formando una sola pieza. La idea de la tarta helada probablemente procede de postres compuestos de
-                    helado y galletas o de los trifles, que surgieron en el Renacimiento. La tarta helada puede
-                    emplearse en cumpleaños e incluso en bodas.</p>
-                  <a href="" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
+          <div class="col-6 col-md-4 mt-5">
+            <a href="./pages/tortahelada.html">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./assets/oreotorta.jpg" alt="bizchocolate.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">Torta Helada</h5>
+                    <p class="card-text">Torta como una tarta hecha con helado y pastel, en capas alternas o mezclados,
+                      formando una sola pieza. La idea de la tarta helada probablemente procede de postres compuestos de
+                      helado y galletas o de los trifles, que surgieron en el Renacimiento. La tarta helada puede
+                      emplearse en cumpleaños e incluso en bodas.</p>
+                    <a href="./pages/tortahelada.html" class="btn btn-dark btn-block mt-2">
+                      <i class="bi bi-eyeglasses"></i> Ver Receta
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -155,17 +161,18 @@
         <div class="d-flex align-items-center">
           <div class="row">
             <div class="col-12 col-sm-10 col-md-6 col-lg-6">
-              <h1 class="font-weight-bold">Que se necesita para ser un chef?</h1>
-              <span class="text-center">Todo chef debe conocer profundamente el producto y materia prima, adquirir las
+              <h2 class="font-weight-bold card-cheft-text">Que se necesita para ser un chef?</h2>
+              <span class="text-center card-cheft-text">Todo chef debe conocer profundamente el producto y materia
+                prima, adquirir las
                 habilidades para
                 saber hacer uso adecuado de las técnicas según los distintos contextos y objetivos planteados. Creemos
                 que además de estos conocimientos, lo que necesita un chef para trabajar es poseer también
                 un conjunto de habilidades laterales como la creatividad y el uso de esta, la capacidad de trabajar en
                 equipo y liderar, o la habilidad de expresarse libremente y de manera efectiva sea en público o medio
                 digital. Para ello es tan importante tanto la formación como la capacidad de adaptarse al lugar de
-                trabajo y ser capaz de aportar valor en todo lo que se haga. </span>
+                trabajo y ser capaz de aportar valor en todo lo que se haga. </>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-6 text-center card-chef">
               <div id="chef" class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="chef-card">
                   <div class="box"></div>
