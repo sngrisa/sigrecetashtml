@@ -1,4 +1,4 @@
-#hero {
+/* #hero {
     margin-top: 30px;
     text-align: center;
     display: flex;
@@ -72,11 +72,9 @@ a {
     0% {
         transform: translatey(0px);
     }
-
     50% {
         transform: translatey(-20px);
     }
-
     100% {
         transform: translatey(0px);
     }
@@ -156,9 +154,7 @@ a {
     top: 98px;
 }
 
-.text-recipe {
-    font-weight: bold;
-}
+
 
 li {
     font-weight: bolder;
@@ -180,29 +176,27 @@ span {
     padding: 10px !important;
 }
 
-
 @media (min-width: 700px) {
-
-    a{
+    a {
         text-decoration: none !important;
     }
-
     .card-img,
     .card-img-top {
         height: 200px !important;
     }
 }
 
+a {
+    text-decoration: none !important;
+}
 
 @media (max-width: 480px) {
-
     .card-img,
     .card-img-top {
         border-top-left-radius: var(--bs-card-inner-border-radius) 1 !important;
         border-top-right-radius: var(--bs-card-inner-border-radius) !important;
         height: 200px !important;
     }
-
     #lettuce {
         position: absolute;
         top: 236px;
@@ -210,29 +204,24 @@ span {
         width: 67px;
         animation: float 4s ease-in-out infinite;
     }
-
     span {
         display: flex !important;
         justify-content: center !important;
         margin-left: 20% !important;
     }
-
     h2 {
         display: flex !important;
         justify-content: center !important;
         margin-left: 20% !important;
     }
-
     .card-img,
     .card-img-top {
         height: 400px !important;
     }
-
     #hero {
         height: 500px !important;
         display: flex;
     }
-
     .input-wrapper {
         z-index: 1;
         background: white;
@@ -247,62 +236,49 @@ span {
 }
 
 @media (max-width: 700px) {
-
     .card-img,
     .card-img-top {
         border-top-left-radius: var(--bs-card-inner-border-radius) 1 !important;
         border-top-right-radius: var(--bs-card-inner-border-radius) !important;
         height: 200px !important;
     }
-
     span {
         display: flex !important;
         justify-content: center !important;
-        margin-left: 20% !important;
+        margin-left: -1% !important;
     }
-
     h2 {
         display: flex !important;
         justify-content: center !important;
         margin-left: 20% !important;
     }
-
-    #lettuce {
-        position: absolute;
-        top: 236px;
-        left: 265px;
-        width: 67px;
-        animation: float 4s ease-in-out infinite;
-    }
-
     .card-img,
     .card-img-top {
-        height: 400px !important;
+        border-top-left-radius: var(--bs-card-inner-border-radius);
+        border-top-right-radius: var(--bs-card-inner-border-radius);
+        height: 200px !important;
     }
-
     #hero {
         height: 450px !important;
     }
-
     #beef {
         position: absolute;
-        top: 30px;
-        left: 30px;
+        top: 38px;
+        left: 17px;
         animation: float 7s ease-in-out infinite;
+        width: 25%;
     }
-
     #chef {
-        width: 335px;
+        width: 284px;
         height: auto;
     }
-
     #onion {
         position: absolute;
-        top: 43px;
-        left: 270px;
+        top: -5px;
+        left: 206px;
         animation: float 6s ease-in-out infinite;
+        width: 20%;
     }
-
     .card-chef {
         margin-top: 10% !important;
         display: flex;
@@ -315,7 +291,6 @@ span {
         padding-left: inherit !important;
         margin-left: 15% !important;
     }
-
     .input-wrapper {
         z-index: 1;
         background: white;
@@ -327,6 +302,20 @@ span {
         border-radius: 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
+    #lettuce {
+        position: absolute;
+        top: 97px;
+        left: 250px;
+        width: 52px;
+        animation: float 4s ease-in-out infinite;
+    }
+    #tomato {
+        position: absolute;
+        bottom: 23px;
+        left: 17px;
+        animation: float 5s ease-in-out infinite;
+        width: 14%;
+    }
 }
 
 .h1,
@@ -336,4 +325,4 @@ h4,
 h5,
 h6 {
     text-align: center;
-}
+} */

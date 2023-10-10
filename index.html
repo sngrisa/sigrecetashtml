@@ -2,167 +2,199 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <title>RecetaApp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/btn.css">
-  <link rel="stylesheet" href="./css/card.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="utf-8">
+    <title>RecetaApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- 
+
+    <link rel="stylesheet" href="./css/text.css">
+    
+    <link rel="stylesheet" href="./css/styles.css"> 
+    -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/chef.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
 
 <body>
-  <div class="d-flex flex-column h-100 text-center">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><i class="bi bi-card-list"></i> SiG Recetas</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-card-list"></i> SiG Recetas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#hero"><i class="bi bi-house-door"></i>
-              Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#recetas"><i class="bi bi-newspaper"></i> Recetas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#chef"><i class="bi bi-cookie"></i> Como ser un chef?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#subscribe"><i class="bi bi-bag-check-fill"></i> Suscribirse</a>
-          </li>
-        </ul>
-      </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero"><i class="bi bi-house-door"></i>
+                      Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recetas"><i class="bi bi-newspaper"></i> Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#chef"><i class="bi bi-cookie"></i> Como ser un chef?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe"><i class="bi bi-bag-check-fill"></i> Suscribirse</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="container main-container">
-      <section id="hero">
-        <h1>Buena Comida, <br> Buena Vida</h1>
-      </section>
-      <section id="recipes" class="my-5">
-        <div class="section-title text-center my-5">
-          <h1 class="font-weight-bold">Recetas sencillas y sabrosas</h1>
-          <span class="text-recipe">Aquí algunos platos que me encanta preparar en casa, te animas?</span>
-        </div>
-        <div class="row" id="recetas">
-          <div class="col-6 col-md-4 mt-5">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
-                <img class="card-img-top" src="./assets/bizchocolate.jpg" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Bizcocho de chocolate</h5>
-                  <p class="card-text">El pastel de chocolate, tarta de chocolate o torta de chocolate, es un postre
-                    conocido internacionalmente, que se popularizó a finales del siglo XIX y se sirve frecuentemente en
-                    reuniones, como fiestas de cumpleaños y bodas.</p>
-                  <a href="./pages/bizchocolate.html" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
-                </div>
-              </div>
+    <div class="d-flex flex-column w-100 container container-fluid">
+        <section id="hero">
+            <h1>Buena Comida, <br> Buena Vida</h2>
+        </section>
+        <section id="recipes section-title my-5">
+            <div class="section-title text-center my-5">
+                <h4 class="mt-3 font-weight-bold">Recetas sencillas y sabrosas</h1>
+                    <span class="text-recipe">Aquí algunos platos que me encanta preparar en casa, te animas?</span>
             </div>
-          </div>
-          <div class="col-6 col-md-4 mt-5">
-            <a href="./pages/biznaranja.html">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="./assets/biznaranja.jpg" alt="bizchocolate.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Bizcocho de Naranja</h5>
-                    <p class="card-text"> Es uno de esos bizcochos de toda la vida con una miga densa y jugosa.
-                      Aromatizado con la ralladura y el zumo de naranja, para conseguir un toque muy cítrico, resulta
-                      delicioso.</p>
-                    <a href="./pages/biznaranja.html" class="btn btn-dark btn-block mt-2">
-                      <i class="bi bi-eyeglasses"></i> Ver Receta
-                    </a>
-                  </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/bizchocolate.jpg" alt="bizchocolate.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Bizcocho de chocolate</h5>
+                            <p class="card-text">Tarta de chocolate o torta de chocolate, es un postre conocido internacionalmente, que se popularizó a finales del siglo XIX y se sirve frecuentemente en reuniones, como fiestas de cumpleaños y bodas.</p>
+                            <a href="./pages/bizchocolate.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 mt-5">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./assets/pastafrola.png" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Pastafrola</h5>
-                  <p class="card-text">Tarta artesanal típica de la gastronomía de Italia, Egipto, Grecia, Paraguay,
-                    Argentina y Uruguay.</p>
-                  <a href="./pages/pastafrola.html" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/biznaranja.jpg" alt="biznaraja.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Bizcocho de Naranja</h5>
+                            <p class="card-text"> Es uno de esos bizcochos de toda la vida con una miga densa y jugosa. Aromatizado con la ralladura y el zumo de naranja, para conseguir un toque muy cítrico, resulta delicioso.
+                            </p>
+                            <a href="./pages/biznaranja.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/pastafrola.png" alt="pastafrola.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Pastafrola</h5>
+                            <p class="card-text">Tarta artesanal típica de la gastronomía de Italia, Egipto, Grecia, Paraguay, Argentina y Uruguay.</p>
+                            <a href="./pages/pastafrola.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/lemonpae.jpg" alt="lemonpae.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemon Pae</h5>
+                            <p class="card-text">Tarta formada por una base de masa quebrada u hojaldre que se rellena con crema de limón. Esta tarta a menudo se complementa con un merengue, lo que resulta en tarta de limón con merengue.
+                            </p>
+                            <a href="./pages/lemonpae.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/flan.jpg" alt="flan.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Flan</h5>
+                            <p class="card-text">
+                                Postre de origen francés​ elaborado con una natilla teniendo como ingredientes principales huevos enteros, leche y azúcar que luego es refrigerado para obtener una textura cremosa y gelatinosa.
+                            </p>
+                            <a href="./pages/flan.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/oreotorta.jpg" alt="oreotorta.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta Helada</h5>
+                            <p class="card-text">Torta como una tarta hecha con helado y pastel, en capas alternas o mezclados, formando una sola pieza. La idea de la tarta helada probablemente procede de postres compuestos de helado y galletas o de los trifles, que surgieron
+                                en el Renacimiento. La tarta helada puede emplearse en cumpleaños e incluso en bodas.</p>
+                            <a href="./pages/tortahelada.html" class="btn btn-dark btn-block mt-2">
+                                <i class="bi bi-eyeglasses"></i> Ver Receta
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 mt-5">
-            <div class="d-flex justify-content-center">
-              <div class="card" style="width: 18rem;" [routerLink]="['/recetas', id+1]">
-                <img class="card-img-top" src="./assets/lemonpae.jpg" alt="bizchocolate.jpg">
-                <div class="card-body">
-                  <h5 class="card-title">Lemon Pae</h5>
-                  <p class="card-text">Tarta formada por una base de masa quebrada u hojaldre que se rellena con crema
-                    de limón. Esta tarta a menudo se complementa con un merengue, lo que resulta en tarta de limón con
-                    merengue.</p>
-                  <a href="./pages/lemonpae.html" class="btn btn-dark btn-block mt-2">
-                    <i class="bi bi-eyeglasses"></i> Ver Receta
-                  </a>
+        </section>
+        <section class="my-5">
+            <div class="row chefContainer">
+                <div class="col">
+                    <h1 class="font-weight-bold card-cheft-text">Que se necesita para ser un chef?</h2>
+                        <span class="text-center card-cheft-text mt-3">Todo chef debe conocer profundamente el producto y materia
+                        prima, adquirir las
+                        habilidades para
+                        saber hacer uso adecuado de las técnicas según los distintos contextos y objetivos planteados. Creemos
+                        que además de estos conocimientos, lo que necesita un chef para trabajar es poseer también
+                        un conjunto de habilidades laterales como la creatividad y el uso de esta, la capacidad de trabajar en
+                        equipo y liderar, o la habilidad de expresarse libremente y de manera efectiva sea en público o medio
+                        digital. Para ello es tan importante tanto la formación como la capacidad de adaptarse al lugar de
+                        trabajo y ser capaz de aportar valor en todo lo que se haga. </span>
                 </div>
-              </div>
+                <div class="col">
+                    <div class="chef-card card">
+                        <img class="food-img" id="chef" src="assets/chef.svg">
+                        <!-- <img class="food-img" id="chef" src="assets/chef.svg">
+                        <img class="food-img-animated" id="lettuce" src="assets/lettuce.svg">
+                        <img class="food-img-animated" id="onion" src="assets/onion.svg">
+                        <img class="food-img-animated" id="beef" src="assets/beef.svg">
+                        <img class="food-img-animated" id="tomato" src="assets/tomato.svg"> -->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-6 col-md-4 mt-5">
-            <a href="./pages/flan.html">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="./assets/flan.jpg" alt="flan.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Flan</h5>
-                    <p class="card-text">Postre de origen francés​ elaborado con una natilla teniendo como ingredientes
-                      principales huevos enteros, leche y azúcar que luego es refrigerado para obtener una textura
-                      cremosa
-                      y gelatinosa.</p>
-                    <a href="./pages/flan.html" class="btn btn-dark btn-block mt-2">
-                      <i class="bi bi-eyeglasses"></i> Ver Receta
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4 mt-5">
-            <a href="./pages/tortahelada.html">
-              <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="./assets/oreotorta.jpg" alt="bizchocolate.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Torta Helada</h5>
-                    <p class="card-text">Torta como una tarta hecha con helado y pastel, en capas alternas o mezclados,
-                      formando una sola pieza. La idea de la tarta helada probablemente procede de postres compuestos de
-                      helado y galletas o de los trifles, que surgieron en el Renacimiento. La tarta helada puede
-                      emplearse en cumpleaños e incluso en bodas.</p>
-                    <a href="./pages/tortahelada.html" class="btn btn-dark btn-block mt-2">
-                      <i class="bi bi-eyeglasses"></i> Ver Receta
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="my-5">
-        <div class="d-flex align-items-center">
-          <div class="row">
-            <div class="col-12 col-sm-10 col-md-6 col-lg-6">
-              <h2 class="font-weight-bold card-cheft-text">Que se necesita para ser un chef?</h2>
-              <span class="text-center card-cheft-text">Todo chef debe conocer profundamente el producto y materia
+
+        </section>
+        <footer class="flex-container mt-5">
+            <hr>
+            <section class="footer-items d-flex">
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="https://www.facebook.com/sngrisa"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/sngrisa/"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/santiago-grisafi/"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/sn_grisa"><i class="bi bi-twitter-x"></i></a>
+                    </li>
+                </ul>
+                <h6>&copy; 2023 SiG Software. Todos los derechos reservados</h6>
+            </section>
+        </footer>
+    </div>
+
+
+    <!-- <div class="container main-container">
+            
+            <section class="my-5">
+                <div class="d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-10 col-md-6 col-lg-6">
+                            
+                            <span class="text-center card-cheft-text">Todo chef debe conocer profundamente el producto y materia
                 prima, adquirir las
                 habilidades para
                 saber hacer uso adecuado de las técnicas según los distintos contextos y objetivos planteados. Creemos
@@ -191,38 +223,19 @@
         <div class="card-contact">
           <h1 class="font-weight-bold my-4">Delicias a tu bandeja de entrada</h1>
           <span class="mb-5 w-50 text-recipe">Recibí las novedades en tu mail... ¡Te organizamos la vida!</span>
-          <div class="input-wrapper my-5">
-            <input type="email" class="contact-input" placeholder="Tu correo electronico..." name="" id="">
-            <button type="submit" class="btn btn-primary contact-button">Suscribirse</button>
-          </div>
-          <div class="images-form">
-            <img class="images-form-salad" src="assets/salad.svg">
-            <img class="images-form-plate" src="assets/plate.svg">
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer class="flex-container mt-5">
-      <hr>
-      <section class="footer-items d-flex">
-        <ul class="footer-social-list">
-          <li>
-            <a href="https://www.facebook.com/sngrisa"><i class="bi bi-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/sngrisa/"><i class="bi bi-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/santiago-grisafi/"><i class="bi bi-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/sn_grisa"><i class="bi bi-twitter-x"></i></a>
-          </li>
-        </ul>
-        <h5>&copy; 2023 SiG Software. Todos los derechos reservados</h5>
-      </section>
-    </footer>
-  </div>
+                            <div class="input-wrapper my-5">
+                                <input type="email" class="contact-input" placeholder="Tu correo electronico..." name="" id="">
+                                <button type="submit" class="btn btn-primary contact-button">Suscribirse</button>
+                            </div>
+                            <div class="images-form">
+                                <img class="images-form-salad" src="assets/salad.svg">
+                                <img class="images-form-plate" src="assets/plate.svg">
+                            </div>
+                        </div>
+            </section>
+            </div>
+            
+            </div> -->
 
 </body>
 

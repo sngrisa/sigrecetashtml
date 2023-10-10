@@ -1,15 +1,16 @@
-html {
-    height: 100%;
-}
-
 .navbar {
-    padding: .5rem 7rem !important;
     min-height: 80px !important;
     font-size: 20px;
     color: black !important;
     background-color: lightgray !important;
     font-weight: bolder !important;
     border-bottom: 1px solid black;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+
+html {
+    height: 100% !important;
 }
 
 .navbar>* {
@@ -21,29 +22,18 @@ html {
     color: black !important;
 }
 
-@media (min-width: 992px) {
-    .navbar-expand-lg {
-        flex-flow: row nowrap !important;
-        justify-content: space-between !important;
-    }
-
-    .navbar-collapse {
-        flex-grow: 0 !important;
-    }
+.nav-items {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: end !important;
 }
 
-.nav-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+.nav-items li {
+    text-align: justify !important;
+    justify-content: space-between !important;
 }
 
-.nav-items li{
-    text-align: justify;
-    justify-content: space-between;
-}
-
-
-a{
-    color: black !important;
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
